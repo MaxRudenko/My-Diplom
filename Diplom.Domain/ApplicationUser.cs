@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,5 +18,6 @@ namespace Diplom.Domain
             // Add custom user claims here
             return userIdentity;
         }
+        public virtual Team Team { get; set; }
     }
 }

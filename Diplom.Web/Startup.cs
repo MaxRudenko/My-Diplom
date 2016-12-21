@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(Diplom.Web.Startup))]
-
+[assembly: OwinStartupAttribute(typeof(Diplom.Web.Startup))]
 namespace Diplom.Web
 {
     public partial class Startup
