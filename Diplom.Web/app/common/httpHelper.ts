@@ -30,5 +30,5 @@
             return deferred.promise;
         }
     }
-    angular.module("app").service("httpHelpers", HttpHelpers);
+    angular.module("mainApp").service("httpHelpers", HttpHelpers);
 }

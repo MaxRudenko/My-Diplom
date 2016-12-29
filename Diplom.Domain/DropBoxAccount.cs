@@ -9,6 +9,5 @@ namespace Diplom.Domain
     public class DropBoxAccount : BaseEntity
     {
         public string AccessToken { get; set; }
-        public string RootFolder { get; set; }
     }
 }

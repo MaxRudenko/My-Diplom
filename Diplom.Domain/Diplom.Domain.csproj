@@ -61,12 +61,13 @@
     <Compile Include="BaseEntity.cs" />
     <Compile Include="DropBoxAccount.cs" />
     <Compile Include="Enums\MessageType.cs" />
+    <Compile Include="Enums\UserRoles.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadUserMessage.cs" />
-    <Compile Include="Sella.cs" />
     <Compile Include="TeacherProfile.cs" />
     <Compile Include="Team.cs" />
+    <Compile Include="TeamMember.cs" />
     <Compile Include="WebSiteSettings.cs" />
   </ItemGroup>
   <ItemGroup>

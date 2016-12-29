@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Diplom.Domain
 {
-    public class TeacherProfile
+    public class TeacherProfile : BaseEntity
     {
-        public Sella Sella { get; set; }
         public string Post { get; set; }
         public string AcademicDegree { get; set; }
         public string ScientificTitle { get; set; }

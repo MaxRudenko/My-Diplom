@@ -38,6 +38,6 @@ var app;
             return HttpHelpers;
         }());
         Helpers.HttpHelpers = HttpHelpers;
-        angular.module("app").service("httpHelpers", HttpHelpers);
+        angular.module("mainApp").service("httpHelpers", HttpHelpers);
     })(Helpers = app.Helpers || (app.Helpers = {}));
 })(app || (app = {}));

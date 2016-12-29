@@ -6,7 +6,8 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Diplom.Web.Models;
+using Diplom.ViewModels.ManageViewModels;
+using Diplom.Services.IdentityManagers;
 
 namespace Diplom.Web.Controllers
 {

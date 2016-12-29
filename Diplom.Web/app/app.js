@@ -7,7 +7,13 @@ var app;
                 .state("index", {
                 url: "/index",
                 templateUrl: "/Profile/Index",
-                controller: "profileController",
+                controller: "indexController",
+                controllerAs: "vm"
+            })
+                .state("team-files", {
+                url: "/team-files",
+                templateUrl: "/Profile/TeamFiles",
+                controller: "teamFilesController",
                 controllerAs: "vm"
             });
         }

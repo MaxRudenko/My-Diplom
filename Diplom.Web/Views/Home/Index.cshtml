@@ -4,22 +4,19 @@
 }
 
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp" ng-controller="profileController as wm" ng-cloak>
 <head>
     <meta charset="utf-8">
     <title>Документ HTML5</title>
-    <link href="~/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <script src="~/bower_components/jquery/dist/jquery.js"></script>
-    <script src="~/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/bower_components/angular/angular.js"></script>
-    <script src="~/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="~/app/app.js"></script>
-    <script src="~/app/controllers/profileController.js"></script>
+    @Styles.Render("~/Content/css")
 </head>
-<body>
-    <div ng-app="mainApp">
+<body >
+    <div>
         <div ui-view>
+
         </div>
     </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angularMainApp")
 </body>
 </html>

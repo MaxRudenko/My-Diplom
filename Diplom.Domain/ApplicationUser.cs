@@ -18,6 +18,6 @@ namespace Diplom.Domain
             // Add custom user claims here
             return userIdentity;
         }
-        public virtual Team Team { get; set; }
+        public DateTime? CreationDate { get; set; }
     }
 }

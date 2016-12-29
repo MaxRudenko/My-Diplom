@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Diplom.Web.Models
+namespace Diplom.ViewModels.AccountViewModels
 {
     public class ExternalLoginConfirmationViewModel
     {
@@ -16,7 +20,7 @@ namespace Diplom.Web.Models
     }
 
     public class SendCodeViewModel
-    {
+    { 
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
         public string ReturnUrl { get; set; }

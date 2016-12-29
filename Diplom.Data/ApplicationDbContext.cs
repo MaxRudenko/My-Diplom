@@ -11,11 +11,16 @@ namespace Diplom.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(string connectionString= "DefaultConnection")
-            : base(connectionString, throwIfV1Schema: false)
+        public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Configuration.ProxyCreationEnabled = false;
+            Database.SetInitializer<ApplicationDbContext>(null);// Remove default initializer
         }
 
+        public ApplicationDbContext(string connectionString) : base(connectionString, throwIfV1Schema: false)
+        {
+            Configuration.ProxyCreationEnabled = false;
+        }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -25,6 +30,7 @@ namespace Diplom.Data
             modelBuilder.Entity<Message>()
                 .HasMany(c => c.ReadUserMessages)
                 .WithRequired(o => o.Message);
+            base.OnModelCreating(modelBuilder);
         }
         public override IDbSet<ApplicationUser> Users { get; set; }
         public DbSet<Message> Messages { get; set; }
